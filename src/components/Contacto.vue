@@ -13,7 +13,7 @@
             <v-row>
                 <v-col cols="12" xs="12" md="12" lg="6"   > 
                     
-                    <v-form class="formu pa-1" name="contact" method="POST" netlify data-netlify="true">
+                    <v-form class="formu pa-1" name="contact" method="POST" data-netlify="true">
                         <v-text-field
                             solo
                             v-model="name"
@@ -21,19 +21,25 @@
                             :rules="nameRules"
                             label ="Name"
                             required
-                            type="text"
-                            name="name"
-                        ></v-text-field>
+                        >
+                            <input
+                                type="text"
+                                name="name"
+                            >
+                        </v-text-field>
 
                         <v-text-field
                             solo
                             v-model="email"
                             :rules="emailRules"
                             label="E-mail"
-                            type="email"
-                            name="email"
                             required
-                        ></v-text-field>
+                        >
+                            <input
+                                type="email"
+                                name="email"
+                            >
+                        </v-text-field>
 
                         <v-textarea
                             solo class="light-red"
