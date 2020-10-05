@@ -21,7 +21,7 @@
                             :rules="nameRules"
                             label ="Name"
                             required
-                            input type="text"
+                            type="text"
                             name="name"
                         ></v-text-field>
 
@@ -30,6 +30,7 @@
                             v-model="email"
                             :rules="emailRules"
                             label="E-mail"
+                            type="email"
                             name="email"
                             required
                         ></v-text-field>
