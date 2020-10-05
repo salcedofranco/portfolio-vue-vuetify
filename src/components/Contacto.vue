@@ -13,7 +13,7 @@
             <v-row>
                 <v-col cols="12" xs="12" md="12" lg="6"   > 
                     
-                    <v-form class="formu pa-1" name="contact" method="POST" data-netlify="true">
+                    <v-form class="formu pa-1" name="contact" method="POST" netlify data-netlify="true">
                         <v-text-field
                             solo
                             v-model="name"
