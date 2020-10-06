@@ -13,7 +13,10 @@
             <v-row>
                 <v-col cols="12" xs="12" md="12" lg="6"   > 
                     
-                    <v-form class="formu pa-1" name="contact" method="POST" netlify>
+                    <v-form class="formu pa-1" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                        <p style="display: none;" class="hidden">
+                            <label> Dont fill this out if you are human: <input name="bot-field" /> </label>
+                        </p>
                         <v-text-field
                             solo
                             v-model="name"
@@ -59,20 +62,7 @@
 
                     </v-form>
 
-                    <form name="contact" method="POST" data-netlify="true" netlify>
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+                    
 
 
                 </v-col>
