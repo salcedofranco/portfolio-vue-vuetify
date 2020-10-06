@@ -12,32 +12,35 @@
 
             <v-row>
                 <v-col cols="12" xs="12" md="12" lg="6"   > 
+                    
+                    
                     <mdb-container>
-                            <mdb-row>
-                                <mdb-col size="12" class="text-center mb-5">
-                    <v-form class="formu" name="simple-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-                        <p>
-                            <input type="hidden" name="form-name" value="simple-form" />
-                        </p>
+                        <mdb-row>
+                            <mdb-col size="12" class="text-center mb-5">
+                                <form class="formu" name="simple-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                                    <p>
+                                    <input type="hidden" name="form-name" value="simple-form" />
+                                    </p>
 
-                        
+                                    <div class="grey-text">
+                                        <mdb-input type="text" name="name" size="sm" label="Your name" icon="user" group  validate error="wrong" success="right"/>
+                                        <mdb-input type="email" name="email" size="sm" label="Your email" icon="envelope" group  validate error="wrong" success="right"/>
+                                        <mdb-textarea name="message" size="sm" label="Your message" icon="pencil-alt"/>
+                                        <mdb-btn color="primary" type="submit">Enviar</mdb-btn>
+                                    </div>
 
-                                    <!--<mdb-modal-header class="primary-color red-text">
-                                     <h4 class="title"><fa class="fas fa-pencil-alt" /> Contact form</h4> 
-                                    </mdb-modal-header>-->
-
-                                    <mdb-modal-body class="grey-text">
-                                    <mdb-input type="text" name="name" size="sm" label="Your name" icon="user" group  validate error="wrong" success="right"/>
-                                    <mdb-input type="email" name="email" size="sm" label="Your email" icon="envelope" group  validate error="wrong" success="right"/>
-                                    <label> <mdb-textarea name="message" size="sm" label="Your message" icon="pencil-alt"/></label>
-                                    <mdb-btn color="primary" type="submit">Enviar</mdb-btn>
-                                    </mdb-modal-body>
-                                    <!--<mdb-modal-footer>
-                                    <mdb-btn color="secondary" @click.native="showModal = false">Close</mdb-btn>
-                                    </mdb-modal-footer>
-                                    <mdb-btn color="primary" type="submit">Enviar</mdb-btn>-->
-                               
-                    </v-form> 
+                                    <p class="h4 text-center mb-4">Write to us</p>
+    <div class="grey-text">
+      <mdb-input type="text" name="name" label="Your name" icon="user" group  validate error="wrong" success="right"/>
+      <mdb-input type="email" name="email" label="Your email" icon="envelope" group  validate error="wrong" success="right"/>
+      
+      <mdb-textarea name="message" :rows="2" label="Your message" icon="pencil"/>
+    </div>
+    <div class="text-center">
+      <mdb-btn outline="secondary"  type="submit">Send <mdb-icon far icon="paper-plane" class="ml-1"/></mdb-btn>
+    </div>
+                                                                 
+                                </form> 
                     </mdb-col>
                             </mdb-row>
                         </mdb-container>
@@ -70,7 +73,7 @@
 </template>
 
 <script>
-  import { mdbContainer, mdbRow, mdbCol, mdbInput, mdbTextarea, mdbBtn, mdbIcon,mdbModalBody, mdbModalFooter } from 'mdbvue';
+  import { mdbContainer, mdbRow, mdbCol, mdbInput, mdbtextarea, mdbTextarea, mdbBtn, mdbIcon,mdbModalBody, mdbModalFooter } from 'mdbvue';
   export default {
     name: 'FormsPage',
     components: {
