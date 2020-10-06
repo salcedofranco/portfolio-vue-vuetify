@@ -13,64 +13,8 @@
             <v-row>
                 <v-col cols="12" xs="12" md="12" lg="6"   > 
                     
-                    <v-form class="formu pa-1" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-                        <p style="display: none;" class="hidden">
-                            <label> Dont fill this out if you are human: <input name="bot-field" /> </label>
-                        </p>
-                        <v-text-field
-                            solo
-                            v-model="name"
-                            :counter="10"
-                            :rules="nameRules"
-                            label ="Name"
-                            required
-                        >
-                            <input
-                                type="text"
-                                name="name"
-                            >
-                        </v-text-field>
+                    
 
-                        <v-text-field
-                            solo
-                            v-model="email"
-                            :rules="emailRules"
-                            label="E-mail"
-                            required
-                        >
-                            <input
-                                type="email"
-                                name="email"
-                            >
-                        </v-text-field>
-
-                        <v-textarea
-                            solo class="light-red"
-                            counter
-                            label="Text"
-                            :rules="rules"
-                            name="message"
-                            placeholder="Hola, desde aca podes enviarme un mensaje!"
-                        ></v-textarea>
-
-                        <p>
-                    <button class="ma-2" outlined color="indigo" type="submit">Send</button>
-                    </p>
-
-                    <v-btn class="ma-2" outlined color="indigo" type="submit"> enviar Button
-                    </v-btn>
-
-                    </v-form>
-
-                    <form name="contact" method="post" data-netlify="true">
-      <input type="hidden" name="contact" value="simple-form" />saSSas<input
-        type="text"
-        name="name"
-      />
-      <input type="email" name="email" />saa
-      <input type="textarea" name="message" />DAs
-      <button type="submit">Send</button>
-    </form>
                     
 
 
