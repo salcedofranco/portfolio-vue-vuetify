@@ -1,6 +1,6 @@
 <template>
-    <form name="ask-question" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="ask-question" />
+    <form name="simple-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="simple-form" />
       <p>
         <label> <input type="hidden" name="form-name" value="simple-form" /></label>   
       </p>
