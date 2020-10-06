@@ -29,12 +29,13 @@
                                     <mdb-modal-body class="grey-text">
                                     <mdb-input type="text" name="name" size="sm" label="Your name" icon="user" group  validate error="wrong" success="right"/>
                                     <mdb-input type="email" name="email" size="sm" label="Your email" icon="envelope" group  validate error="wrong" success="right"/>
-                                    <mdb-textarea name="message" size="sm"  :rows="2" label="Your message" icon="pencil"/>
-                                    </mdb-modal-body>
-                                    <mdb-modal-footer>
-                                    <!--<mdb-btn color="secondary" @click.native="showModal = false">Close</mdb-btn>-->
+                                    <mdb-textarea type="textarea" name="message" size="sm" label="Your message" icon="pencil-alt"/>
                                     <mdb-btn color="primary" type="submit">Enviar</mdb-btn>
+                                    </mdb-modal-body>
+                                    <!--<mdb-modal-footer>
+                                    <mdb-btn color="secondary" @click.native="showModal = false">Close</mdb-btn>
                                     </mdb-modal-footer>
+                                    <mdb-btn color="primary" type="submit">Enviar</mdb-btn>-->
                                
                     </v-form> 
                     </mdb-col>
