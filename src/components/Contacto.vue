@@ -13,38 +13,46 @@
             <v-row>
                 <v-col cols="12" xs="12" md="12" lg="6"   > 
                     
-                    
-                    <mdb-container>
-                        <mdb-row>
-                            <mdb-col size="12" class="text-center mb-5">
-                                <form class="formu" name="simple-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-                                    <p>
-                                    <input type="hidden" name="form-name" value="simple-form" />
-                                    </p>
-
-                                    <div class="grey-text">
-                                        <mdb-input type="text" name="name" size="sm" label="Your name" icon="user" group  validate error="wrong" success="right"/>
-                                        <mdb-input type="email" name="email" size="sm" label="Your email" icon="envelope" group  validate error="wrong" success="right"/>
-                                        <mdb-textarea name="message" size="sm" label="Your message" icon="pencil-alt"/>
-                                        <mdb-btn color="primary" type="submit">Enviar</mdb-btn>
-                                    </div>
-
-                                    <p class="h4 text-center mb-4">Write to us</p>
-    <div class="grey-text">
-      <mdb-input type="text" name="name" label="Your name" icon="user" group  validate error="wrong" success="right"/>
-      <mdb-input type="email" name="email" label="Your email" icon="envelope" group  validate error="wrong" success="right"/>
-      
-      <mdb-textarea name="message" :rows="2" label="Your message" icon="pencil"/>
-    </div>
-    <div class="text-center">
-      <mdb-btn outline="secondary"  type="submit">Send <mdb-icon far icon="paper-plane" class="ml-1"/></mdb-btn>
-    </div>
-                                                                 
-                                </form> 
-                    </mdb-col>
-                            </mdb-row>
-                        </mdb-container>
-
+                   <v-form name="simple-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="simple-form" />
+      <p>
+        <label> <input type="hidden" name="form-name" value="simple-form" /></label>   
+      </p>
+      <p>
+        <!--<label>Your Name: <input type="text" name="name" /></label>-->
+        <v-text-field
+        solo
+            type="text"
+            name="name"
+            label="Mnameen input"
+            :rules="rules"
+            hide-details="auto"
+        ></v-text-field>   
+      </p>
+      <p>
+        <!--<label>Your Email: <input type="email" name="email" /></label>-->
+        <v-text-field
+        solo
+            type="email"
+            name="email"
+            label="Main input"
+            :rules="rules"
+            hide-details="auto"
+        ></v-text-field>
+      </p>
+      <p>
+        <!--<label>Message: <textarea name="message"></textarea></label>-->
+        <!--<label>Message: <mdb-textarea type="textarea" name="message" :rows="2" icon="pencil"/></label>-->
+        <v-textarea
+          solo
+          name="message"
+          label="Solo textarea"
+        ></v-textarea>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </v-form>
                 </v-col>
 
                 <v-col class="redes" cols="12" xs="12" md="12" lg="6">
@@ -97,7 +105,7 @@
 <style  scoped>
 
 #contacto{
-    background-color:#f1f1f1;
+    background-color:#272727;
 }
 
 .subtitulo {
