@@ -1,69 +1,45 @@
 <template>
-    <section id="contacto">
+    <section id="contacto" >
         <div class="svg-border-waves">
       <img src="~@/assets/tilt3.svg" />
     </div>
         <v-container>
               <v-row align="center" justify="center">
-                <v-col class="subtitulo" cols="12">
-                    <h1 class="display-2 font-weight-white text-center blue--text text-xl-h4">Contacto</h1>   
+                <v-col class="subtitulo pb-0" cols="12">
+                    <h1 class="display-2 font-weight-white text-center text-xl-h4">Contacto</h1>   
                 </v-col>
             </v-row>
 
             <v-row>
                 <v-col cols="12" xs="12" md="12" lg="6"   > 
-                    
-                    <v-form class="formu pa-1" name="simple-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                    <mdb-container>
+                            <mdb-row>
+                                <mdb-col size="12" class="text-center mb-5">
+                    <v-form class="formu" name="simple-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                         <p>
                             <input type="hidden" name="form-name" value="simple-form" />
                         </p>
-                        <v-text-field
-                            solo
-                            v-model="name"
-                            :counter="10"
-                            :rules="nameRules"
-                            label ="Name"
-                            required
-                        >
-                            <input
-                                type="text"
-                                name="name"
-                            >
-                        </v-text-field>
 
-                        <v-text-field
-                            solo
-                            v-model="email"
-                            :rules="emailRules"
-                            label="E-mail"
-                            required
-                        >
-                            <input
-                                type="email"
-                                name="email"
-                            >
-                        </v-text-field>
+                        
 
-                        <v-textarea
-                            solo class="light-red"
-                            counter
-                            label="Text"
-                            :rules="rules"
-                            name="message"
-                            placeholder="Hola, desde aca podes enviarme un mensaje!"
-                        ></v-textarea>
+                                    <!--<mdb-modal-header class="primary-color red-text">
+                                     <h4 class="title"><fa class="fas fa-pencil-alt" /> Contact form</h4> 
+                                    </mdb-modal-header>-->
 
-                        <p>
-                    <button class="ma-2" outlined color="indigo" type="submit">Send</button>
-                    </p>
-
-                    <v-btn class="ma-2" outlined color="indigo" type="submit"> enviar Button
-                    </v-btn>
-
-                    </v-form>
-
-                    
-
+                                    <mdb-modal-body class="grey-text">
+                                    <mdb-input type="text" name="name" size="sm" label="Your name" icon="user" group  validate error="wrong" success="right"/>
+                                    <mdb-input type="email" name="email" size="sm" label="Your email" icon="envelope" group  validate error="wrong" success="right"/>
+                                    <mdb-textarea name="message" size="sm"  :rows="2" label="Your message" icon="pencil"/>
+                                    </mdb-modal-body>
+                                    <mdb-modal-footer>
+                                    <!--<mdb-btn color="secondary" @click.native="showModal = false">Close</mdb-btn>-->
+                                    <mdb-btn color="primary" tipe="submit">Enviar</mdb-btn>
+                                    </mdb-modal-footer>
+                               
+                    </v-form> 
+                    </mdb-col>
+                            </mdb-row>
+                        </mdb-container>
 
                 </v-col>
 
@@ -93,42 +69,44 @@
 </template>
 
 <script>
-    export default {
-        data: () => ({
-      rules: [
-          v => !!v || 'Mensaje is required',
-          v => v.length <= 300 || 'Max 300 caracteres'
-          ],
+  import { mdbContainer, mdbRow, mdbCol, mdbInput, mdbTextarea, mdbBtn, mdbIcon,mdbModalBody, mdbModalFooter } from 'mdbvue';
+  export default {
+    name: 'FormsPage',
+    components: {
+      mdbContainer,
+      mdbRow,
+      mdbCol,
+      mdbInput,
+      mdbTextarea,
+      mdbBtn,
+      mdbIcon
       
-
-      valid: false,
-      name: '',
-      nameRules: [
-        v => !!v || 'Name is required',
-        v => v.length <= 10 || 'Name must be less than 10 characters',
-      ],
-      
-      email: '',
-      emailRules: [
-        v => !!v || 'E-mail is required',
-        v => /.+@.+/.test(v) || 'E-mail must be valid',
-      ],
-    }),
-  
+    },
+    data() {
+      return {
+        showModal: false
+      };
     }
+  }
 </script>
 
 <style  scoped>
 
 #contacto{
-    background-color:#1e1f20;
+    background-color:#f1f1f1;
 }
 
 .subtitulo {
   padding-top: 0;
   padding-bottom: 2rem;
-  filter: drop-shadow(0px 0px 2px #008cff);
+  color: #141414;
+  filter: drop-shadow(0px 0px 2px #000000);
 
+}
+
+.sppb-form-control:focus
+    {
+    color: red !important;
 }
 
 .redes{
@@ -138,7 +116,8 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    background-color:#1e1f20;
+    
+    
 }
 
 .redes .v-btn{

@@ -5,7 +5,7 @@
     </div>
 <v-container>
   <v-row align="center" justify="center">
-    <v-col class="subtitulo" cols="12">
+    <v-col class="subtitulo pt-5" cols="12">
       <h1 class="display-2 font-weight-white text-center deep-purple--text text-xl-h4">Practicas y Proyectos</h1>   
     </v-col>
   </v-row>

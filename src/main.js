@@ -10,6 +10,9 @@ import '@fortawesome/fontawesome-free/css/all.css'
 
 
 
+import 'mdbvue/lib/css/mdb.min.css'
+
+
 Vue.config.productionTip = false
 
 

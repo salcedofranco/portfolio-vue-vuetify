@@ -37,14 +37,7 @@
   </v-app>
 </template>
 <style scoped>
-.v-main {
-  
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  
-  
-}
+
 </style>
 
 <script>
@@ -112,3 +105,8 @@ export default {
   },
 };
 </script>
+
+<style >
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+</style>

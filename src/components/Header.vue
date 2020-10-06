@@ -35,18 +35,6 @@
     padding: 0;
 }
 
-.svg-border-waves .v-image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3rem;
-  width: 100%;
-  overflow: hidden;
-}
-
-#hero {
-  z-index: 0;
-}
 
 .svg-border-waves img {
   position: absolute;

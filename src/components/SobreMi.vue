@@ -3,7 +3,7 @@
   
 <v-container fluid class="container pa-0">
 
-      <v-col class="subtitulo pt-3">
+      <v-col class="subtitulo pt-5">
         <h1 class="display-2 font-weight-white text-center light-green--text pt-0">Sobre mi</h1>
       </v-col>
 

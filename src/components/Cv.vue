@@ -1,12 +1,12 @@
 <template>
-    <section id="contact">
+    <section class="pb-5" id="contact">
         <div class="svg-border-waves">
       <img src="~@/assets/tilt1.svg" />
     </div>
          
         <v-container class="container">
              <v-row class="mb-5" align="center" justify="center">
-                 <v-col class="subtitulo mb-5 " cols="12">
+                 <v-col class="subtitulo mt-5 mb-5 " cols="12">
                     <h1 class="display-2 font-weight-white text-center red--text text-xl-h4">Curriculum</h1>   
                 </v-col>
             </v-row >
