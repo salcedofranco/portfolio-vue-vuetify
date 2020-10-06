@@ -62,7 +62,7 @@
 
                     </v-form>
 
-                    <form name="simple-form" method="POST" data-netlify="true">
+                    <form name="contact" method="POST" netlify data-netlify="true">
   <p>
     <label>Your Name: <input type="text" name="name"/></label>
   </p>
