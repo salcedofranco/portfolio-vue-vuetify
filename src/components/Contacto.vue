@@ -62,7 +62,7 @@
 
                     </v-form>
 
-                    <form name="contact" method="post">
+                    <form name="contact" method="post" data-netlify="true">
       <input type="hidden" name="contact" value="simple-form" />saSSas<input
         type="text"
         name="name"
