@@ -33,7 +33,7 @@
                                     </mdb-modal-body>
                                     <mdb-modal-footer>
                                     <!--<mdb-btn color="secondary" @click.native="showModal = false">Close</mdb-btn>-->
-                                    <mdb-btn color="primary" tipe="submit">Enviar</mdb-btn>
+                                    <mdb-btn color="primary" type="submit">Enviar</mdb-btn>
                                     </mdb-modal-footer>
                                
                     </v-form> 
