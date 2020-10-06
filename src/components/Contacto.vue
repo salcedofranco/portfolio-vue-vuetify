@@ -62,19 +62,15 @@
 
                     </v-form>
 
-                    <form name="contact" method="POST" netlify data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name"/></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email"/></label>
-  </p>
-  <p>
-    <label>Message: <input type="textarea" name="message"/></label>
-  </p>
-  <p><button type="submit">Send</button></p>
-</form>
-
+                    <form name="contact" method="post">
+      <input type="hidden" name="contact" value="simple-form" />saSSas<input
+        type="text"
+        name="name"
+      />
+      <input type="email" name="email" />saa
+      <input type="textarea" name="message" />DAs
+      <button type="submit">Send</button>
+    </form>
                     
 
 
