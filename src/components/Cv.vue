@@ -6,7 +6,7 @@
          
         <v-container class="container">
              <v-row class="mb-5" align="center" justify="center">
-                 <v-col class="subtitulo mt-5 mb-5 " cols="12">
+                 <v-col class="subtitulo mt-5" cols="12">
                     <h1 class="display-2 font-weight-white text-center red--text text-xl-h4">Curriculum</h1>   
                 </v-col>
             </v-row >
@@ -59,7 +59,7 @@
 
 .subtitulo {
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 2rem;
   filter: drop-shadow(0px 0px 2px #ff0000);
 
 }
@@ -73,14 +73,7 @@
     flex-direction: column;
 }
 
-.svg-border-waves .v-image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3rem;
-  width: 100%;
-  overflow: hidden;
-}
+
 
 
 

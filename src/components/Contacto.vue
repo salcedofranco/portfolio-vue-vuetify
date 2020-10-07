@@ -1,11 +1,11 @@
 <template>
     <section id="contacto" >
         <div class="svg-border-waves">
-      <img src="~@/assets/tilt3.svg" />
-    </div>
+          <img src="~@/assets/tilt3.svg" />
+        </div>
         <v-container>
               <v-row align="center" justify="center">
-                <v-col class="subtitulo pb-0" cols="12">
+                <v-col class="subtitulo" cols="12">
                     <h1 class="display-2 font-weight-white text-center text-xl-h4">Contacto</h1>   
                 </v-col>
             </v-row>
@@ -24,7 +24,7 @@
         solo
             type="text"
             name="name"
-            label="Mnameen input"
+            label="Nombre:"
             :rules="rules"
             hide-details="auto"
         ></v-text-field>   
@@ -35,23 +35,33 @@
         solo
             type="email"
             name="email"
-            label="Main input"
+            label="Email:"
             :rules="rules"
             hide-details="auto"
         ></v-text-field>
       </p>
-      <p>
+      <p class="mb-0">
         <!--<label>Message: <textarea name="message"></textarea></label>-->
         <!--<label>Message: <mdb-textarea type="textarea" name="message" :rows="2" icon="pencil"/></label>-->
         <v-textarea
+        class="mb-0"
           solo
           name="message"
-          label="Solo textarea"
+          label="Hola, desde acá podes enviarme un mensaje:"
         ></v-textarea>
       </p>
       <p>
-        <button type="submit">Send</button>
+        <!--<button type="submit">Send</button>-->
+        <v-btn
+          class="ma-2"
+          outlined
+          color="#64DD17"
+          type="submit"
+        >
+          Enviar
+        </v-btn>
       </p>
+      <hr>
     </v-form>
                 </v-col>
 
@@ -69,37 +79,16 @@
                     <v-btn  color="red accent" dark icon href="mailto:fcedo13@gmail.com" target="_blank">
                         <v-icon large color="red" style="font-size:110px">mdi-gmail</v-icon>
                     </v-btn>
-                    
-
                 </v-col>
             </v-row>
-
-
-        </v-container>
-        
+        </v-container>     
     </section>
 </template>
 
 <script>
-  import { mdbContainer, mdbRow, mdbCol, mdbInput, mdbtextarea, mdbTextarea, mdbBtn, mdbIcon,mdbModalBody, mdbModalFooter } from 'mdbvue';
-  export default {
-    name: 'FormsPage',
-    components: {
-      mdbContainer,
-      mdbRow,
-      mdbCol,
-      mdbInput,
-      mdbTextarea,
-      mdbBtn,
-      mdbIcon
-      
-    },
-    data() {
-      return {
-        showModal: false
-      };
+    export default {
+        name: 'Contacto',
     }
-  }
 </script>
 
 <style  scoped>
@@ -111,15 +100,11 @@
 .subtitulo {
   padding-top: 0;
   padding-bottom: 2rem;
-  color: #141414;
-  filter: drop-shadow(0px 0px 2px #000000);
+  color: #f3f3f3;
+  filter: drop-shadow(0px 0px 2px #ffffff);
 
 }
 
-.sppb-form-control:focus
-    {
-    color: red !important;
-}
 
 .redes{
     display: flex;
@@ -128,6 +113,8 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
+    margin-top:2rem ;
+    margin-bottom:3rem ;
     
     
 }
@@ -139,7 +126,7 @@
 
 @media (max-width: 340px) {
     .redes .v-icon {
-      font-size: 95px !important;
+      font-size: 75px !important;
   }
 }
 

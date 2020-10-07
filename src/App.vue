@@ -8,7 +8,7 @@
       <Proyectos/>
       <Cv/>
       <Contacto/>
-      <Form/>
+     
       
     </v-main>
     <v-scale-transition>
@@ -49,7 +49,7 @@ import Certificaciones from './components/Certificaciones';
 import Proyectos from './components/Proyectos';
 import Cv from './components/Cv';
 import Contacto from './components/Contacto';
-import Form from './components/Form';
+
 
 
 import { mdiCardAccountDetails } from '@mdi/js';
@@ -67,7 +67,7 @@ export default {
     Proyectos,
     Cv,
     Contacto,
-    Form
+   
   },
 
   data: () => ({
