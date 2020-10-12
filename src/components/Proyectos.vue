@@ -22,7 +22,7 @@
         </v-img>
         <v-card-title class="pb-0">RED DE BICICLETAS</v-card-title>
         <v-card-text class="text--primary">
-          <div>Whitehaven Beach</div>
+          <div>Node, express, pug, OAuth, mongoose, mongoDB, heroku.</div>
           <div></div>
         </v-card-text>
 
@@ -36,7 +36,7 @@
           <v-btn 
             color="black" 
             text
-            href="https://github.com/salcedofranco/redBicicletasCoursera">Ir a Github
+            href="https://github.com/salcedofranco/redBicicletasCoursera">Codigo
           </v-btn>
         </v-card-actions>
 
@@ -55,7 +55,7 @@
         <v-card-title class="pb-0">AGENCIA DE VIAJES</v-card-title>
 
         <v-card-text class="text--primary">
-      <div>Whitehaven Beach</div>
+      <div>Node, express, pug, sequelize, mysql , heroku.</div>
 
       <div></div>
       </v-card-text>
@@ -70,7 +70,7 @@
       <v-btn
         color="black"
         text
-        href="https://github.com/salcedofranco/AgenciaDeViaje-Udemy">Ir a Github 
+        href="https://github.com/salcedofranco/AgenciaDeViaje-Udemy">Codigo
       </v-btn>
         </v-card-actions>
       </v-card>
@@ -84,7 +84,7 @@
         <v-card-title class="pb-0">APP INFO DE PELICULAS</v-card-title>
 
         <v-card-text class="text--primary">
-        <div>Whitehaven Beach</div>
+        <div>Node, express, Api: The movie DB</div>
         <div></div>
         </v-card-text>
 
@@ -98,12 +98,13 @@
         <v-btn 
         color="black" 
         text 
-        href="https://github.com/salcedofranco/appSearchMovie">Ir a Github
+        href="https://github.com/salcedofranco/appSearchMovie">Codigo
         </v-btn>
         </v-card-actions>
       </v-card>
     </v-col>
 
+ <!--
     <v-col class="4"  lg="6" >
       <v-card class="mx-auto" max-width="400">
         <v-img class="white--text align-end" height="200px" src="@/assets/imagenMovies1.jpg">
@@ -130,9 +131,17 @@
         </v-btn>
         </v-card-actions>
       </v-card>
-    </v-col>
-
+    </v-col>-->
+  
   </v-row>
+  <v-col  lg="12">
+    <div class="github">
+      <a href="https://github.com/salcedofranco/" class="github" target="_blank"><i class="fab fa-github fa-3x fa-lg"></i></a>
+      <a class="white--text" href="https://github.com/salcedofranco/"> + Todas mis practicas: Ir a Github </a>
+    </div>
+    </v-col>
+  
+  
 </v-container>
 
 </section>
@@ -158,6 +167,15 @@
 
 .fila{
     padding-bottom: 3em;
+}
+
+.github{
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
 }
 
 .svg-border-waves .v-image {

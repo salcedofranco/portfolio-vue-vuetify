@@ -47,7 +47,7 @@
         class="mb-0"
           solo
           name="message"
-          label="Hola, desde acá podes enviarme un mensaje:"
+          label="Desde acá podes enviarme un mensaje:"
         ></v-textarea>
       </p>
       <p>
