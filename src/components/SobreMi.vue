@@ -15,8 +15,8 @@
         <v-col class="texto" cols="12" sm="6" md="8" xs="12" lg="8" >
           <h3 class="pa-5 white--text text-subtitle-1">Hola, 
            me llamo Franco Salcedo, soy de Mendoza - 
-            Argentina y hace ya un tiempo que me anime a meterme en el mundo de la programación, desde entonces trato de estar en constante aprendizaje, ya sea con cursos presenciales como también de forma autodidacta, además consulto y formo parte de algunas comunidades de desarrolladores en discord y slack que me ayudan a resolver problemas junto a mi mejor compañero (google).
-            Actualmente estoy cursando Javascript/Node dictado por IDITS y online en Coursera.
+            Argentina y hace ya un tiempo que me anime a meterme en el mundo de la programación que tanto me gusta, desde entonces he tratado de estar en constante aprendizaje, ya sea con cursos presenciales, como también de forma autodidacta, además consulto y formo parte de algunas comunidades de desarrolladores en discord y slack que me ayudan a resolver problemas junto a mi mejor compañero (google).
+            Actualmente estoy comenzando a ver Vue.js y terminando un curso de Javascript dictado por IDITS Mendoza y Node.js online en Coursera.
             Fuera del ambito del software lo que más me gusta es estar en familia, juntarme con amigos, jugar al futbol, compartir asados y ver series.</h3>  
         </v-col>
 
