@@ -9,7 +9,7 @@
 
     <v-row class="fila" align="center" justify="center">
         <v-col class="foto" cols="11" sm="6" md="4" xs="11" lg="4">
-          <v-img  src="@/assets/fotocv2.jpg"  style="border-radius:50%;" max-width="350px"></v-img>
+          <v-img  src="@/assets/foto-franco.jpg"  style="border-radius:50%;" max-width="350px"></v-img>
         </v-col>
 
         <v-col class="texto" cols="12" sm="6" md="8" xs="12" lg="8" >
