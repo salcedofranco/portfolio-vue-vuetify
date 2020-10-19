@@ -10,11 +10,11 @@
       <v-list>
         <v-list-item>
           <v-list-item-avatar>
-            <img src="@/assets/fotocv2.jpg" alt="Logo" />
+            <img src="@/assets/foto-franco.jpg" alt="Logo" />
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title class="title">Bienvenidos</v-list-item-title>
-            <v-list-item-subtitle>Portfolio web</v-list-item-subtitle>
+            <v-list-item-subtitle>Mi portfolio web</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list>
