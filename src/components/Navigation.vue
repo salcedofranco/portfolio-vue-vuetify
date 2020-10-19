@@ -99,7 +99,7 @@ export default {
       ["mdi-home-outline", "Home", "#home"],
       ["mdi-information-outline", "Sobre mi", "#yo"],
       ["mdi-note", "Capacitaciones", "#cursos"],
-      ["mdi-map", "Practicas", "#projects"],
+      ["mdi-map", "Practicas", "#proyects"],
       ["mdi-face", "Cv", "#contact"],
       ["mdi-email-outline", "Contacto", "#contacto"],
     ],

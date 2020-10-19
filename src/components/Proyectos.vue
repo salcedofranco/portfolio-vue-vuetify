@@ -149,7 +149,7 @@
 
 <script>
     export default {
-        name: 'Slider',
+        name: 'Proyectos',
     }
 </script>
 
