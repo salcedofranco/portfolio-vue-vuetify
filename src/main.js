@@ -8,6 +8,16 @@ import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import '@mdi/font/css/materialdesignicons.css'
 import '@fortawesome/fontawesome-free/css/all.css'
 
+import { ValidationProvider } from 'vee-validate/dist/vee-validate.full.esm';
+import { ValidationObserver } from 'vee-validate';
+
+// Register it globally
+Vue.component('ValidationProvider', ValidationProvider);
+// Register it globally
+Vue.component('ValidationObserver', ValidationObserver);
+
+
+
 
 
 import 'mdbvue/lib/css/mdb.min.css'

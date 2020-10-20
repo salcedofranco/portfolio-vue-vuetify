@@ -8,6 +8,7 @@
       <Proyectos/>
       <Cv/>
       <Contacto/>
+      
      
       
     </v-main>
@@ -67,6 +68,7 @@ export default {
     Proyectos,
     Cv,
     Contacto,
+    
    
   },
 
