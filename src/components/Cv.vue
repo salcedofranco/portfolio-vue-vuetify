@@ -12,15 +12,15 @@
             </v-row >
             <v-row class=" mt-5">
                 
-                <v-col class="columnas" md="6">
-                    <v-btn color="blue" dark icon href="https://imgfz.com/i/sqL3gcf.jpeg" target="_blank">
+                <v-col class="columnas" md="6"> 
+                    <v-btn color="blue" dark icon href="https://imgfz.com/i/HKkwJzE.png" target="_blank">
                         <v-icon large color="blue" style="font-size:120px">person</v-icon>
                     </v-btn>
                     <h3 class="blue--text mt-6">Ver C.V.</h3>
                 </v-col>
 
                 <v-col class="columnas" md="6">
-                    <v-btn color="red" dark icon href="https://www.pdfhost.net/index.php?Action=DownloadFile&id=97eb59128d1dd5fa307e644526b48efc" target="_blank">
+                    <v-btn color="red" dark icon href="index.php?Action=DownloadFile&id=0e98bb1c3182163abe41b30ef028a4d3" target="_blank">
                         <v-icon large color="red" style="font-size:120px">mdi-cloud-download</v-icon>
                     </v-btn>
                     <h3 class="red--text mt-6 ">Descargar C.V.</h3> 
