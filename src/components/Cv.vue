@@ -13,7 +13,7 @@
             <v-row class=" mt-5">
                 
                 <v-col class="columnas" md="6"> 
-                    <v-btn color="blue" dark icon href="https://imgfz.com/i/HKkwJzE.png" target="_blank">
+                    <v-btn color="blue" dark icon href="https://imgfz.com/i/Ylzt3Mr.jpeg" target="_blank">
                         <v-icon large color="blue" style="font-size:120px">person</v-icon>
                     </v-btn>
                     <h3 class="blue--text mt-6">Ver C.V.</h3>
