@@ -20,7 +20,7 @@
                 </v-col>
 
                 <v-col class="columnas" md="6">
-                    <v-btn color="red" dark icon href="https://www.pdfhost.net/index.php?Action=DownloadFile&id=0e98bb1c3182163abe41b30ef028a4d3" target="_blank">
+                    <v-btn color="red" dark icon href="https://www.pdfhost.net/index.php?Action=DownloadFile&id=5f22a8f72417c404e83d639c710e6e7e" target="_blank">
                         <v-icon large color="red" style="font-size:120px">mdi-cloud-download</v-icon>
                     </v-btn>
                     <h3 class="red--text mt-6 ">Descargar C.V.</h3> 
